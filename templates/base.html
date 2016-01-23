@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Hello World refactor</title>
+		<meta name="viewport" content="width=device-width, initial-sclae=1.0">
+		<style>
+			div#main {
+				max-width: 500px;
+				padding: 20px;
+			}
+
+			nav .title {
+				font-weight: bold;
+			}
+
+			a.active {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			{% block content %}{% endblock %}
+		</div>
+	</body>
+	<footer>
+		{% block footer %}
+		{% endblock %}
+	</footer>
+</html>
